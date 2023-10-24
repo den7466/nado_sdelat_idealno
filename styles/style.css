@@ -1,0 +1,48 @@
+/* TODO: переделать позиционарование элемента title */
+.title {
+  max-width: 739px;
+  font-size: 116px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  z-index: 3;
+  cursor: pointer;
+  transition: color .2s ease;
+  justify-self: center;
+  padding-top: 60px;
+}
+
+.title:hover {
+  color: #4c4c4c;
+}
+
+.title:hover::before {
+  display: block;
+  position: absolute;
+  top: 182px;
+  right: 22px;
+  content: 'На самом деле нет.\AВажнее — научиться ошибаться';
+  white-space: pre;
+  padding: 36px 44px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 2px solid #000;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 1;
+  color: #000;
+  text-align: left;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.title::after {
+  content: '*';
+}
+
+.video {
+  position: absolute;
+  z-index: 1;
+}
